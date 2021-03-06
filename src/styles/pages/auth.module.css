@@ -1,0 +1,90 @@
+ .container {
+     width: 100vw;
+     height: 100vh;
+     background: var(--blue-dark);
+     font-size: 2rem;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+ }
+ 
+ .loginContent img {
+     width: 30rem;
+ }
+ 
+ .loginContent {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     align-items: baseline;
+     margin-left: 10%;
+ }
+ 
+ .loginContent strong {
+     width: 100%;
+     margin: 5rem 0 2rem 0;
+ }
+ 
+ .loginContent>div>img {
+     width: 3rem;
+ }
+ 
+ .loginContent>div {
+     display: flex;
+     gap: 1rem;
+ }
+ 
+ .loginContent>div>p {
+     line-height: 1.9rem;
+     font-size: 1.5rem;
+     font-weight: 500;
+     color: var(--purple-light);
+ }
+ 
+ .divInput {
+     margin-top: 3rem;
+ }
+ 
+ .loginContent>div input {
+     max-width: 320px;
+     background: linear-gradient(90deg, rgb(51 55 121), rgba(73, 83, 184, 0.4));
+     border: 0;
+     border-radius: 5px 0 0 5px;
+     padding: 25px 20px;
+     font-size: 1.5rem;
+     color: var(--purple-light)
+ }
+ 
+ .loginContent>div input:focus {
+     outline: none;
+ }
+ 
+ .loginContent>div input::placeholder {
+     color: var(--purple-light)
+ }
+ 
+ .loginContent>div button {
+     font-size: 1.5rem;
+     max-width: 100px;
+     background: #5965E0;
+     border: 0;
+     border-radius: 0 5px 5px 0;
+     color: var(--purple-light);
+     padding: 10px 20px;
+     justify-content: center;
+     justify-items: center;
+ }
+ 
+ .activeButton {
+     color: var(--white) !important;
+     background: var(--green) !important;
+ }
+ 
+ .loginContent>div button img {
+     width: 2rem;
+ }

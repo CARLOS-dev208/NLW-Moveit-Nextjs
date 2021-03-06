@@ -1,5 +1,5 @@
-
-import { useContext } from "react";
+import {useRouter} from 'next/router'
+import { useContext, useState } from "react";
 import { CountdownContext } from "../contexts/CountdownContext"
 import styles from "../styles/components/Countdown.module.css";
 
@@ -9,7 +9,11 @@ export function Countdown() {
   const { minutes,seconds,hashFinished,isActive,resetCountdown,startCountdown} = useContext(CountdownContext)
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split("");
   const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
+  const router = useRouter();
 
+  
+
+  
   return (
     <>
       <div className={styles.countdownConteiner}>
